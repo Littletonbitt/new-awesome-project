@@ -4,136 +4,188 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="/home/alexander/new-awesome-project/styles/styles.css">
+		<link href="fonts.googleapis.com" rel="stylesheet">
 		<title>my-awesome-project</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header-upper" style="display: flex; justify-content: space-between; align-items: center;">
-				<div style="text-align: left;">
-					<a href="#">
-						<img
-							src="assets/icons/search.png"
+		<header class="f-rubik pt-10">
+			<div class="d-flex justify-between align-center pb-10">
+				<div class="text-left">
+					<a 	class="pointbutton-act"
+						href="#search">
+						<img 	
+					   		src="/home/alexander/assets/icons/search.png" 
 							alt="search">
 					</a>
 				</div>
-				<div style="text-align: center;">
+				<div class="text-center">
 					<img
-                                        	src="assets/icons/Лого.png"
-						alt="logo"
-						style="padding-left: 550px;">
+						class="pl-550"
+                                        	src="/home/alexander/assets/icons/Лого.png"
+						alt="logo">
 				</div>
-				<a href="" style="display: inline-block;">
+				<a class="d-inline" href="#shop">
 					<img
-						src="assets/icons/shop.png"
-						alt="shop"
-						style="padding-left: 600px;">
+						class="pl-600"
+						src="/home/alexander/assets/icons/shop.png"
+						alt="shop">
 				</a>
-				<a href="" style="display: inline-block;">
+				<a class="d-inline pointbutton-act" 
+					href="#user">
 					<img
-						src="assets/icons/User--avatar.png"
+						src="/home/alexander/assets/icons/User--avatar.png"
 						alt="user">
 				</a>
 			</div>
-			<nav class="header-cols">
-				<table style="padding: 0px 100px;">
+			<hr>
+			<nav class="navigation">
+				<p class="fs-22 text-center">Быстрая навигация по сайту</p>
+ 				<ul>
+					<li class="text-center">
+						<a class="fs-22"
+							href="#future">1) Мебельный бренд будущего</a>
+					</li>
+					<li class="text-center">
+						<a class="fs-22"
+							href="#differences">2) Что отличает наш бренд от других</a>
+					</li>
+ 					<li class="text-center">
+						<a class="fs-22"
+							href="#supplies">3) Новые керамические изделия</a>
+					</li>
+ 					<li class="text-center">
+						<a class="fs-22"
+							href="#popular-products">4) Наши популярные продукты</a>
+					</li>
+					<li class="text-center">
+						<a class="fs-22"
+							href="#join-club">5) Присоединяйтесь к клубу и получайте льготы</a>
+					</li>
+					<li class="text-center">
+						<a class="fs-22"
+							href="#additional-info">6) Дополнительная информация</a>
+					</li>
+ 				</ul>
+			</nav>
+			<hr>
+
+			<nav class="pt-10">
+				<table class="py-0 px-100">
 					<thead>
 						<tr>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Горшки для цветов</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+									href="#Горшки-для-цветов">Горшки для цветов</a>
 							</th>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Керамика</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+								   href="#Керамика">Керамика</a>
 							</th>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Столы</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+								   href="#Столы">Столы</a>
 							</th>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Стулья</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+								   href="#Стулья">Стулья</a>
 							</th>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Керамическая посуда</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+								   href="#Керамическая-посуда">Керамическая посуда</a>
 							</th>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Столовые приборы</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+								   href="#Столовые-приборы">Столовые приборы</a>
 							</th>
-							<th scope="col" style="padding-left: 40px;">
-								<a href="">Столовые принадлежности</a>
+							<th class="pl-40" scope="col">
+								<a class="a-t-n pointbutton-act" 
+									href="#Столовые-принадлежности">Столовые принадлежности</a>
 							</th>
 						</tr>
 					</thead>
 				</table>
 			</nav>
-			<hr>
 		</header>
-		<main>
-			<article>
-				<section class="make_space">
-                                        <p style="padding: 20px;"></p>
-                                </section>
-				<section class="aside_image" style="display: flex; justify-content: center; align-items: center; gap: 30px;
-					color: #FFFFFF;">
-					<table>
-						<tbody>
-							<tr>
-								<th scope="row" style="background-color: blue;margin-left: -200px;
-									width: 500px; height: 300px;">
-									<p>Мебельный бренд будущего с <br> неподвластным времени дизайном</p>
-									<a href="#" style="color: #FFFFFF;">Посмотреть коллекцию</a>
-									<p>Новая эра в производстве экологически чистой<br> 
-									мебели с французским брендом элитной розничной<br>
-									торговли Avelon с приятными шрифтами, со вкусом<br>
-									подобранными цветами и красивым способом отображения товаров<br> 
-									в цифровом формате с использованием современных веб-технологий.</p>
-								</th>
-								<td>
-									<picture style="display: inline-block;">
-										<source
-    											srcset="assets/img/chair.jpg"
-    											media="(orientation: portrait)">
-  										<img src="assets/img/Photo.png" alt="">
-									</picture>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+		<main class="f-rubik">
+			<section>
+                                        <p class="p-20"></p>
+                        </section>
+			<article class="ml-10 mr-10">
+				<section class="d-flex fd-row justify-center align-center col-white mr-100 pos-relative overlay-cont-h-600
+						bgcol-b overlay-cont-o-hid w-1200" id="future">
+					<section class="pos-relative hp-100 wp-100">
+						<table class="z-2 pos-relative">
+							<tbody>
+								<tr>
+									<th class="w-700 h-600 text-left pl-60 pt-60 vertical-top" scope="row">
+										<p class="p-0 fs-30 text-left">
+											Мебельный бренд будущего с <br> неподвластным времени дизайном</p>
+										<button class="text-center bd-filter6 b-sh p-0
+											h-60 w-200 b-fsh bgcol-blur mt-60" type="button">
+											<a class="d-block pt-20 text-center h-60 pointbutton-act   
+											   	col-white a-t-n w-200 pointbutton cursor-point" 
+												href="#Посмотреть-коллекцию">Посмотреть коллекцию</a>
+										</button>
+										<p class="text-left mt-200 fs-18">
+										Новая эра в производстве экологически чистой<br> 
+										мебели с французским брендом элитной розничной<br>
+										торговли Avelon с приятными шрифтами, со вкусом<br>
+										подобранными цветами и красивым способом отображения товаров<br> 
+										в цифровом формате с использованием современных веб-технологий.</p>
+									</th>
+									<td class="w-500"></td>
+								</tr>
+							</tbody>
+						</table>
+						<picture class="z-1 pos-absolute r-0 t-0">
+                                                	<source
+                                                        	srcset="/home/alexander/assets/img/chair.jpg"
+                                                               	media="(orientation: portrait)">
+                                                        <img
+                                                                class="d-block overlay-im-w-501 overlay-im-h-602 
+									overlay-im-o-fit overlay-im-mt-n1 mt-n1"
+                                                                src="/home/alexander/assets/img/Photo.png" alt="">
+                                                </picture>
+					</section>
 				</section>
 			</article>
-			<h1 style="padding: 60px 10px 0 0; padding-left: 400px;">Что отличает наш бренд от других</h1>
-			<section class="text-table" style="align-items: center; display: flex;">
-				<table style="border-collapse: separate; border-spacing: 40px 10px;">
+			<h1 class="pt-70 pr-10 text-center ml-10 mr-10">Что отличает наш бренд от других</h1>
+			<section class="text-table align-center d-flex ml-10 mr-10" id="differences">
+				<table class="b-separate pt-40">
 					<thead>
 						<tr>
-							<th scope="col">На следующий день как обычно</th>
-							<th scope="col">Сделано настоящими мастерами своего дела</th>
-							<th scope="col">Непревзойденные цены</th>
-							<th scope="col">Переработанная упаковка</th>
+							<th class="vertical-top" scope="col">На следующий день как обычно</th>
+							<th class="vertical-top" scope="col">Сделано настоящими мастерами своего дела</th>
+							<th class="vertical-top" scope="col">Непревзойденные цены</th>
+							<th class="vertical-top" scope="col">Переработанная упаковка</th>
 						</tr>
 					</thead>
-					<tbody style="text-align: center;">
+					<tbody>
 						<tr>
 							<td>	
-								<p>	
+								<p class="text-left">	
 									Закажите до 15:00<br>
 									и получите свой заказ<br>
 									на следующий день как обычно
 								</p>
 							</td>
 							<td>
-								<p>
+								<p class="text-center">
 									Изделия ручной работы, <br>
 									изготовленные со страстью<br>
 									и мастерством
 								</p>
 							</td>
 							<td>
-								<p>
+								<p class="text-center">
 									Благодаря нашим материалам<br>
 									и качеству вы нигде<br>
 									не найдете более выгодных цен
 								</p>
 							</td>
 							<td>
-								<p>
+								<p class="text-right">
 									Мы используем 100% переработанную упаковку,<br>
 									чтобы обеспечить минимизацию<br>
 									нашего влияния на экологию
@@ -143,189 +195,238 @@
 					</tbody>
 				</table>
 			</section>
-			<section class="new_ceramics">
-				<h2 style="padding: 60px 10px 0 0;">Новые керамические изделия</h2>
-				<table>
+			<section class="ml-10 mr-10 pt-40" id="supplies">
+				<h2>Новые керамические изделия</h2>
+				<table class="w-1230">
 					<tbody>
 						<tr>
-							<td style="height: 400px; overflow: hidden; vertical-align: top;">
-								<picture style="height: 400px; display: block">
+							<td class="o-hid vertical-top">
+								<picture class="d-block">
   									<source
     										srcset="assets/img/chair.png"
     										media="(orientation: portrait)">
-  									<img src="assets/img/Photo.png" alt="">
+  									<img	class="h-375 w-275 pt-20"
+										src="/home/alexander/assets/img/Photo.png" alt="">
 								</picture>
-								<p style="padding-left: 60px;">Стильный стул</p>
-								<p style="padding-left: 60px;">&#163;250</p>
+								<p class="text-left pt-15">Стильный стул</p>
+								<p class="text-left">&#163;250</p>
 							</td>
-							<td style="height: 400px; overflow: hidden; vertical-align: top;">
-								<picture style="height: 400px; display: block;">
+							<td class="o-hid vertical-top">
+								<picture class="d-block">
                                                                 	<source
                                                                         	srcset="assets/img/vases.png"
                                                                         	media="(orientation: portrait)">
-                                                                	<img src="assets/img/vases.png" alt=""
-										style="width: 100%; height: 94%; object-fit: cover;">
+                                                                	<img	class="h-375 w-275 pt-20"
+										src="/home/alexander/assets/img/vases.png" alt="">
                                                         	</picture>
-                                                        	<p style="padding-left: 40px;">Набор ваз в деревенском стиле</p>
-                                                        	<p style="padding-left: 40px;">&#163;155</p>
+                                                        	<p class="text-left pt-15">Набор ваз в деревенском стиле</p>
+                                                        	<p class="text-left">&#163;155</p>
 							</td>
-							<td>
-								<picture style="height: 400px; display: block;">
+							<td class="vertical-top">
+								<picture class="d-block">
                                                                 	<source
                                                                         	srcset="assets/img/vase.png"
                                                                         	media="(orientation: portrait)">
-                                                                	<img src="assets/img/smooth.png" alt="">
+                                                                	<img	class="h-375 pt-20 w-275"
+										src="/home/alexander/assets/img/smooth.png" alt="">
                                                         	</picture>
-                                                        	<p style="padding-left: 60px;">Гладкая ваза</p>
-                                                        	<p style="padding-left: 60px;">&#163;125</p>
+                                                        	<p class="text-left pt-15">Гладкая ваза</p>
+                                                        	<p class="text-left">&#163;125</p>
 							</td>
-							<td>
-                                                        	<picture style="height: 400px; display: block">
+							<td class="vertical-top pr-0">
+                                                        	<picture class="d-block pr-0">
                                                                 	<source
                                                                         	srcset="assets/img/lamp.png"
                                                                         	media="(orientation: portrait)">
-                                                                	<img 
-										src="assets/img/lucylamp.png" alt="">
+                                                                	<img	class="h-375 pt-20 w-275"
+										src="/home/alexander/assets/img/lucylamp.png" alt="">
                                                         	</picture>
-                                                        	<p style="padding-left: 60px;">"Lucy lamp"</p>
-                                                        	<p style="padding-left: 60px;">&#163;399</p>
+                                                        	<p class="text-left pt-15">"Lucy lamp"</p>
+                                                        	<p class="text-left">&#163;399</p>
                                                 	</td>
 						</tr>
 					</tbody>
 				</table>
-				<a href="#" style="display: block; text-align: center; margin: 30px auto;">Посмотреть коллекцию</a>
+				<section class="text-center pt-20">
+					<button class="text-center bd-filter6 st b-sh h-60 w-200 b-fsh bgcol-blur" type="button">
+						<a class="d-block text-center a-t-n pointbutton-act
+						   	cursor-point pointbutton h-60 w-200 pt-20" 
+							href="#Посмотреть-коллекцию">Посмотреть коллекцию</a>
+					</button>
+				</section>
 			</section>
-			<section class="our_popular_products">
-				<h2 style="padding: 60px 10px 0 0;">Наши популярные продукты</h2>
+			<section class="ml-10 mr-10 w-1230" id="popular-products">
+				<h2 class="pt-60 pr-10">Наши популярные продукты</h2>
                                 <table>
                                         <tbody>
 						<tr>
-                                                	<td style="height: 400px; overflow: hidden;">
-                                                        	<picture style="height: 400px;">
+                                                	<td class="h-400 o-hid vertical-top pt-20">
+                                                        	<picture class="d-block">
                                                                 	<source
                                                                         	srcset="assets/img/sofa.png"
                                                                         	media="(orientation: portrait)">
-                                                                	<img src="assets/img/Large.png" alt="">
+                                                                	<img 	class="w-600"
+										src="/home/alexander/assets/img/Large.png" alt="">
                                                         	</picture>
-                                                        	<p>Популярный диван</p>
-                                                        	<p>&#163;980</p>
+                                                        	<p class="text-left pt-15">Популярный диван</p>
+                                                        	<p class="text-left">&#163;980</p>
                                                 	</td>
-                                                	<td>
-                                                        	<picture style="height: 500px;">
+                                                	<td class="vertical-top pt-20">
+                                                        	<picture class="d-block">
                                                                 	<source
                                                                         	srcset="assets/img/chair1.png"
                                                                         	media="(orientation: portrait)">
-                                                                	<img src="assets/img/Photo.png" alt="">
+                                                                	<img 	class="w-300 h-357"
+										src="/home/alexander/assets/img/Photo.png" alt="">
                                                         	</picture>
-                                                        	<p>Стильный стул</p>
-                                                        	<p>&#163;250</p>
+                                                        	<p class="text-left pt-15">Стильный стул</p>
+                                                        	<p class="text-left">&#163;250</p>
                                                 	</td>
-							<td>
-                                                        	<picture style="height: 500px;">
+							<td class="vertical-top pt-20">
+                                                        	<picture class="d-block">
                                                                 	<source
                                                                         	srcset="assets/img/chair2.png"
                                                                         	media="(orientation: portrait)">
-                                                                	<img src="assets/img/chair2.png" alt="">
+                                                                	<img 	class="w-300 h-357"
+										src="/home/alexander/assets/img/chair2.png" alt="">
                                                         	</picture>
-                                                        	<p>Стильный стул</p>
-                                                        	<p>&#163;250</p>
+                                                        	<p class="text-left pt-15">Стильный стул</p>
+                                                        	<p class="text-left">&#163;250</p>
                                                 	</td>
 						</tr>
 					</tbody>
 				</table>
-				<a href="#" style="display: block; text-align: center; margin: 30px auto;">Посмотреть коллекцию</a>	
+				<section class="text-center pt-20">
+					<button class="text-center bd-filter6 st b-sh h-60 w-200 b-fsh bgcol-blur" type="button">
+						<a class="d-block a-t-n cursor-point pointbutton-act
+						   	pointbutton h-60 w-200 pt-20" 
+							href="#Посмотреть-коллекцию">Посмотреть коллекцию</a>
+					</button>
+				</section>
+				<p class="bgcol-wh h-20"></p>
 			</section>
-			<section class="sign_up_button">
-				<h2 style="padding: 30px 0 0 0;text-align: center; margin: 30px auto;">Присоединяйтесь к клубу и получайте льготы</h2>
-				<h3 style="text-align: center; margin: 30px auto;">
-					Подпишитесь на нашу рассылку и получайте эксклюзивные<br>
-					предложения о новыхассортиментах, распродажах,<br>
-					всплывающих магазинах и многом другом
-				</h3>
-				<form style="display: block; text-align: center; margin: 30px auto;">
-					<div>
-    						<label>Ваша почта </label>
-    						<input id="email" type="text" name="email">
-  					</div>
-  					<div>
-    						<input type="submit" value="Зарегистрироваться">
-  					</div>
-				</form>
-			</section>
-			<section class="the_last_block">
-				<table>
+			
+			<p class="bgcol-gr h-80 m-0"></p>
+			<article class="d-flex justify-center bgcol-gr h-450 m-0">
+				<section class="bgcol-wh w-1000 m-0 h-350" id="join-club">	
+					<h2 class="text-center p-40 fs-30">Присоединяйтесь к клубу и получайте льготы</h2>
+					<h3 class="text-center">
+						Подпишитесь на нашу рассылку и получайте эксклюзивные<br>
+						предложения о новых ассортиментах, распродажах,<br>
+						всплывающих магазинах и многом другом
+					</h3>
+					<form class="d-block text-center m-30a">
+						<div>
+    							<input class="h-60 w-300 bgcol-gr"
+								id="email" type="text" name="email" placeholder="Почта@email.com">
+							<input class="h-60 w-150" type="submit" value="Зарегистрироваться">
+  						</div>
+					</form>
+				</section>
+			</article>
+			<section class="d-flex justify-between overlay-cont-o-hid pos-relative w-1200 wp-100 h-500" id="additional-info">
+				<section class="pos-relative wp-100">
+					<table class="z-2 pos-relative text-left wp-40 pl-70">
                                                 <tbody>
                                                 	<tr>
-                                                                <th scope="row" style="margin-left: -200px;
-                                                                        width: 500px; height: 300px;">
-                                                                        <p>От студии в Лондоне до мирового бренда<br>
+                                                                <th class="w-500 pt-60 text-left b-0 justify-start" scope="row">
+                                                                        <p class="text-left fs-22">
+										От студии в Лондоне до мирового бренда<br>
 										с более 400 торговых точек</p>
-                                                                        <a href="#" style="color: #FFFFFF;">Посмотреть коллекцию</a>
-									<p>Когда мы создавали Avion, идея была проста. Сделать высококачественную мебель
-									доступной для массового рынка. Мебель и предметы домашнего обихода ручной
-									работы - это то, чем мы живем, дышим и проектируем, поэтому наш бутик 
-									в Челси стал центром внимания лондонского сообщества дизайнеров интерьера.</p>
+									<p class="text-left pt-20">
+										Когда мы создавали Avion, идея была проста. Сделать 
+										высококачественную мебель доступной для массового рынка.</p>
+									<p class="text-left pt-20">
+										Мебель и предметы домашнего обихода ручной работы - это то, 
+										чем мы живем, дышим и проектируем, поэтому наш бутик 
+                                                                        	в Челси стал центром внимания лондонского сообщества 
+										дизайнеров интерьера. 
+									</p>
+									<section class="text-left pt-100">
+                                                                                <button class="text-center bd-filter6 b-sh h-60
+                                                                                        w-200 b-fsh bgcol-blur" type="button">
+                                                                                        <a class="d-block pt-20 a-t-n pointbutton-act
+											   	pointbutton cursor-point w-200 h-60" 
+												href="#Быть-в-курсе">Быть в курсе</a>
+                                                                                </button>
+                                                                        </section>
                                                                 </th>
-                                                                <td>
-                                                                        <picture style="display: inline-block;">
-                                                                                <source
-                                                                                        srcset="assets/img/corner_sofa.jpg"
-                                                                                        media="(orientation: portrait)">
-                                                                                <img src="assets/img/Image.png" alt="">
-                                                                        </picture>
-                                                                </td>
 							</tr>
                                                 </tbody>
-				</table>
-
-				<a href="#" style="padding: 0 20px 0 80px;">Быть в курсе</a>
-				<table style="padding: 30px">
+					</table>
+					<picture class="pos-absolute z-1 t-0 r-0 wp-50">
+                                        	<source
+                                                	srcset="assets/img/corner_sofa.jpg"
+                                                        media="(orientation: portrait)">
+                                                <img
+                                                	class="h-500 overlay-im-o-fit wp-100"
+                                                        src="/home/alexander/assets/img/Image.png" alt="">
+                                       </picture>
+				</section>
+			</section> 
+		</main>
+		<footer class="bgcol-b col-white text-left">
+			<table class="p-30 pl-40 ml-10 mr-10 text-left p-0">
 					<tbody>
 						<tr>
-							<th style="vertical-align: top; padding-right: 40px;">
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Меню</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Категории</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Наша компания</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Присоединяйтесь к<br>
-									нашей рассылке</a>
+							<th class="vertical-top pr-40 text-left">
+								<a class="pr-30 d-block a-t-n col-white p-4 f-l pointbutton-act" 
+									href="#Меню">Меню</a>
+								<a class="pr-30 d-block a-t-n col-white p-4 f-l pointbutton-act" 
+									href="#Новые-поступления">Новые поступления</a>
+								<a class="pr-30 d-block a-t-n col-white p-4 f-l pointbutton-act" 
+									href="#Бестселлеры">Бестселлеры</a>
+								<a class="pr-30 d-block a-t-n col-white p-4 f-l pointbutton-act" 
+									href="#Недавно-просмотренные-товары">Недавно просмотренные товары</a>
+								<a class="pr-30 d-block a-t-n col-white p-4 f-l pointbutton-act"
+									href="#Популярные-на-этой-неделе">Популярные на этой неделе</a>
+								<a class="pr-30 d-block a-t-n col-white p-4 f-l pointbutton-act" 
+									href="#Все-товары">Все товары</a>
 							</th>
-							<th>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Новые поступления</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Посуда</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">О нас</a>
+							<th class="vertical-top pr-40 text-left">
+								<a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+								   href="#Категории">Категории</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Посуда">Посуда</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Мебель">Мебель</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Товары-для-дома">Товары для дома</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Горшки-для-растений">Горшки для растений</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Стулья">Стулья</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Посуда">Посуда</a>
 							</th>
-							<th>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Бестселлеры</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Мебель</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Вакансии</a>
+							<th class="vertical-top pr-40 text-left">
+								<a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Наша-компания">Наша компания</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#О-нас">О нас</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Вакансии">Вакансии</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Связаться-с-нами">Связаться с нами</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Конфиденциальность">Конфиденциальность</a>
+                                                                <a class="pr-30 d-block a-t-n col-white p-4 pointbutton-act" 
+									href="#Политика-возврата-товаров">Политика возврата товаров</a>
 							</th>
-							<th>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Недавно просмотренные товары</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Товары для дома</a>
-								<a href="#" style="padding: 0 0 0 30px; display: block;">Связаться с нами</a>
-							</th>
-							<th>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Популярные на этой неделе</a>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Горшки для растений</a>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Конфиденциальность</a>
+							<th class="vertical-top pr-40 text-left">
+								<p>Присоединяйтесь к<br>
+                                                                        нашей рассылке</p>
+								<form class="d-flex h-150 w-200 f-col">
+									<input class="h-60 w-250"
+										id="email2" type="text" name="email" placeholder="Почта@email.com">
+									<input class="h-60 w-250" type="submit" value="Зарегистрироваться">
+								</form>
                                                         </th>
-							<th>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Все товары</a>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Стулья</a>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Политика возврата товаров</a>
-                                                        </th>
-							<th>
-                                                                <a href="#" style="padding: 0 0 0 30px; display: block;">Посуда</a>
-                                                        </th>
-
 						</tr>
 					</tbody>
 				</table>
-			</section>
-		</main>
-		<footer>
-			<hr>
-			<section class="foot">
+			<hr class="h-1 ml-10 mr-10">
+			<section class="p-20 ml-10">
 				<h3>Авторское право принадлежит 2022 Avion LTD</h3>
 			</section>
 		</footer>
