@@ -5,4 +5,4 @@
 ## Список используемых технологий 
 HTML5, CSS3
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://littletonbitt.github.io/new-awersome-project/)
+- [Публичная страница на GitHub Pages](https://littletonbitt.github.io/new-awesome-project/)
