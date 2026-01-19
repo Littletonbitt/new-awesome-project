@@ -444,6 +444,10 @@
 			"section3"
 	}
 
+	#toggle_nav.active {
+		width: 100%;	
+	}
+
 	.first-row {
 		grid-area: section1;
 		grid-template-columns: 80vw;
