@@ -3,6 +3,6 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 
 ## Список используемых технологий 
-HTML5, CSS3
+HTML5, CSS3, Javascript
 ## Ссылки
 - [Публичная страница на GitHub Pages](https://littletonbitt.github.io/new-awesome-project/)
