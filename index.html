@@ -4,68 +4,132 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="styles/styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 991px)">
 		<title>my-awesome-project</title>
 	</head>
-	<body>
-		<header class="f-rubik pt-10">
-			<div class="d-grid grid-temp-size-header">
-                                <div class="d-flex justify-left">
+	<body class="fs-16">
+		<header class="f-rubik position-sticky top-0 z-1002 bgcol-white">
+			<div class="d-grid grid-temp-size-header
+					grid-templ-head-logo-sections pl-30p hp-150-991 pt-10 pb-20 z-1002 position-sticky">
+                                <div class="d-grid justify-left d-none">
                                         <a href="#search">
-                                                <img    
+                                                <img    class="hp-100"
                                                         src="assets/icons/search.png" 
                                                         alt="">
                                         </a>
                                 </div>
-                                <div class="d-flex h-20 align-center justify-center">
-                                        <img
+                                <div class="d-grid align-center justify-center grid-logo-area grid-logo-button-columns">
+                                        <img	class="hp-100"
                                                 src="assets/icons/Лого.png"
                                                 alt="logo">
                                 </div>
-                                <div class="d-flex h-20 align-center justify-end">
-                                        <a      class="d-flex"
-                                                href="#shop">
-                                                <img
-                                                        src="assets/icons/shop.png"
-                                                        alt="">
-					</a>
-                                        <a class="d-flex align-center" href="#user">
-                                                <img
-                                                        src="assets/icons/User--avatar.png"
-                                                        alt="">
-                                        </a>
+                                <div class="d-grid justify-end d-none">
+					<div class="d-flex">
+						<div class="d-flex">
+                                       			<a      class="d-flex" href="#shop">
+                                                		<img	class="d-flex object-fill"
+                                                        		src="assets/icons/shop.png"
+                                                        		alt="">
+							</a>
+						</div>
+						<div class="d-flex">
+                                        		<a class="d-flex align-center object-fill d-none" href="#user">
+                                                		<img	class="d-flex"
+                                                        		src="assets/icons/User--avatar.png"
+                                                        		alt="">
+                                        		</a>
+						</div>
+					</div>
                                 </div>
-                        </div>
+				<div class="d-grid d-none-often grid-button-area grid-logo-button-columns" id="menu_toggle">
+					<button class="d-flex wp-100 b-none fd-column justify-between bgcol-none p-0-4">
+						<span class="wp-100 bgcol-text-color h-3 br-8 span-button-active"></span>
+						<span class="wp-100 bgcol-text-color h-3 br-8 span-button-active"></span>
+						<span class="wp-100 bgcol-text-color h-3 br-8 span-button-active"></span>
+					</button>
+				</div>
+			</div>
+			<nav class="d-none-often position-fixed r-m100" id="toggle_nav">
+				<ul class="d-flex fd-column r-m100 wp-80">
+					<li class="d-flex border-bottom-1-solid-eee padding-15-0 wp-100">
+						<a class="a-t-n text-color-black fs-17-18" href="#">Поиск</a>
+					</li>
+					<li class="d-flex border-bottom-1-solid-eee padding-15-0 wp-100">
+						<a class="a-t-n text-color-black fs-17-18" href="#">Профиль</a>
+					</li>
+					<li class="d-flex border-bottom-1-solid-eee padding-15-0 wp-100">
+						<a class="a-t-n text-color-black fs-17-18" href="#">Покупки</a>
+					</li>
+					<li class="d-flex border-bottom-1-solid-eee padding-15-0 justify-between wp-100 fd-column" id="li-for-dropdown">
+						<div class="d-flex wp-100 justify-between" id="dropdown-li">
+							<p class="d-flex fs-17-18">Категории товаров</p>
+							<div class="d-flex fd-column pr-10 justify-spar wp-20">
+								<span class="wp-100 bgcol-text-color h-3 br-8 span-button-active"></span>
+								<span class="wp-100 bgcol-text-color h-3 br-8 span-button-active"></span>
+								<span class="wp-100 bgcol-text-color h-3 br-8 span-button-active"></span>
+							</div>
+						</div>
+						<nav class="pl-10 r-m100 d-none-often z-1002 right-0-m100 h-100vh
+								d-dropdown overflow-scroll" id="dropdown-li-nav">
+							<ul class="d-flex fd-column">
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Горшки для цветов</a>
+								</li>
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Керамика</a>
+								</li>
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Столы</a>
+								</li>
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Стулья</a>
+								</li>
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Керамическая посуда</a>
+								</li> 
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Столовые приборы</a>
+								</li>
+								<li class="d-flex border-bottom-1-solid-eee padding-6-0 wp-100">
+									<a class="a-t-n text-color-black fs-17-18" href="#">Столовые принадлежности</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+				</ul>
+			</nav>
 
 			<hr class="w-hr-text-size bx-br">
-			<nav class="d-flex pt-size justify-center mr-10 ml-10">
+			<nav class="d-none-991 d-flex pt-size justify-center mr-10 ml-10">
 				<ul class="d-flex justify-center g-size row-wrap">
-					<li class="d-flex align-center">
-                                        	<a class="a-t-n pointbutton-act col-gr" 
+					<li class="d-flex align-center d-none-991">
+                                        	<a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Горшки-для-цветов">Горшки для цветов</a>
                                         </li>
                                         <li class="d-flex align-center">
-                                               	<a class="a-t-n pointbutton-act col-gr" 
+                                               	<a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Керамика">Керамика</a>
                                         </li>
                                         <li class="d-flex align-center">
-                                        	<a class="a-t-n pointbutton-act col-gr" 
+                                        	<a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Столы">Столы</a>
                                        </li>
                                        <li class="d-flex align-center">
-                                               	<a class="a-t-n pointbutton-act col-gr" 
+                                               	<a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Стулья">Стулья</a>
                                        </li>
                                        <li class="d-flex align-center">
-                                                <a class="a-t-n pointbutton-act col-gr" 
+                                                <a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Керамическая-посуда">Керамическая посуда</a>
                                        </li>
                                        <li class="d-flex align-center">
-                                                <a class="a-t-n pointbutton-act col-gr" 
+                                                <a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Столовые-приборы">Столовые приборы</a>
                                        </li>
                                        <li class="d-flex align-center">
-                                                <a class="a-t-n pointbutton-act col-gr" 
+                                                <a class="a-t-n pointbutton-act col-gr fs-17-18" 
                                                    href="#Столовые-принадлежности">Столовые принадлежности</a>
                                        </li>
 				</ul>
@@ -76,9 +140,9 @@
 						grid-main-head-rows-1299">
 				<section class="d-grid fd-column bgcol-b pl-60 grid-main-head-row2-1299">
 					<p class="pt-60 fs-30">Мебельный бренд будущего с <br> неподвластным времени дизайном</p>
-                                        <a class="d-flex justify-center align-center pl-60 bd-filter6 b-sh h-60 
+                                        <a class="d-flex justify-center align-center pl-60 bd-filter6 b-sh h-60 fs-16
                                         		w-200 b-fsh bgcol-blur mt-60 pointbutton-act 
-                                                        col-white a-t-n pointbutton cursor-point" 
+                                                        col-white a-t-n pointbutton cursor-point z-998" 
                                            href="#Посмотреть-коллекцию">Посмотреть коллекцию
                                         </a>
                                         <p class="text-left mt-200 fs-18">
@@ -100,7 +164,7 @@
 			<h1 class="d-flex justify-center pt-70 pr-10 ml-10 mr-10">Что отличает наш бренд от других</h1>
 			<section class="ml-10 mr-10">
 				<section class="d-grid justify-between grid-temp-size-differ-brands grid-differ-area-786 grid-sec-area-786
-						grid-differ-column-575 grid-differ-column-575-rows">
+						grid-differ-column-575 grid-differ-column-575-rows wp-90-575">
 					<section class="d-grid pt-20 fd-column">
 						<picture class="d-flex">
                                                         <source
@@ -109,9 +173,9 @@
                                                         <img    class="w-30 h-30"
                                                                 src="assets/icons/Delivery.png" alt="">
                                                 </picture>
-						<div>
-							<p class="pt-10">На следующий день как обычно</p>
-							<p class="pt-10">
+						<div class="d-flex fd-column">
+							<p class="d-flex fs-17-18 pt-10">На следующий день как обычно</p>
+							<p class="d-flex fs-17-18 pt-10">
                                                 		Закажите до 15:00<br>
                                                         	и получите свой заказ<br>
                                                         	на следующий день как обычно
@@ -126,9 +190,9 @@
                                                         <img    class="w-30 h-30"
                                                                 src="assets/icons/Checkmark--outline.png" alt="">
                                                 </picture>
-						<div>
-							<p class="pt-10">Сделано настоящими мастерами своего дела</p>
-							<p class="pt-10">
+						<div class="d-flex fd-column">
+							<p class="d-flex pt-10 fs-17-18">Сделано настоящими<br> мастерами своего дела</p>
+							<p class="d-flex pt-10 fs-17-18">
                                                         	Изделия ручной работы, <br>
                                                         	изготовленные со страстью<br>
                                                         	и мастерством
@@ -143,9 +207,9 @@
                                                         <img    class="w-30 h-30"
                                                                	src="assets/icons/Purchase.png" alt="">
                                                	</picture>
-						<div>
-							<p class="text-left pt-10">Непревзойденные цены</p>
-							<p class="text-left pt-10">
+						<div class="d-flex fd-column">
+							<p class="d-flex text-left fs-17-18 pt-10">Непревзойденные цены</p>
+							<p class="d-flex text-left fs-17-18 pt-10">
                                                         	Благодаря нашим материалам<br>
                                                         	и качеству вы нигде<br>
                                                         	не найдете более выгодных цен
@@ -160,10 +224,10 @@
                                                         <img    class="w-30 h-30"
                                                                	src="assets/icons/Sprout.png" alt="">
                                                 </picture>
-						<div>
-							<p class="text-left pt-10">Переработанная упаковка</p>
-							<p class="text-left pt-10">
-                                                        	Мы используем 100% переработанную упаковку,<br>
+						<div class="d-flex fd-column">
+							<p class="d-flex text-left fs-17-18 pt-10">Переработанная упаковка</p>
+							<p class="d-flex text-left fs-17-18 pt-10">
+								Мы используем 100%<br> переработанную упаковку,<br>
                                                         	чтобы обеспечить минимизацию<br>
                                                         	нашего влияния на экологию
                                                		</p>
@@ -176,7 +240,7 @@
 				<section class="d-grid grid-templ-main-new-supplies justify-between grid-768
 						grid-area-new-supplies">
 					<section class="d-grid vertical-top section-row1-supplies-1299 pt-20 grid-row1">
-						<picture class="d-flex h-350">
+						<picture class="d-flex h-350 wp-90-575">
   							<source
     								srcset="assets/img/Photo.png"
     								media="(orientation: portrait)">
@@ -184,12 +248,12 @@
 								src="assets/img/Photo.png" alt="">
 						</picture>
 						<div>
-							<p class="text-left pt-15">Стильный стул</p>
-							<p class="text-left">&#163;250</p>
+							<p class="text-left pt-15 fs-17-18">Стильный стул</p>
+							<p class="text-left fs-17-18">&#163;250</p>
 						</div>
 					</section>
 					<div class="d-grid vertical-top section-row2-supplies-1299 pt-20 grid-row2">
-						<picture class="d-flex h-350">
+						<picture class="d-flex h-350 wp-90-575">
                                                 	<source
                                                         	srcset="assets/img/vases.png"
                                                                 media="(orientation: portrait)">
@@ -197,12 +261,12 @@
 								src="assets/img/vases.png" alt="">
                                                 </picture>
 						<div>
-                                                	<p class="text-left pt-15">Набор ваз в деревенском стиле</p>
-                                                	<p class="text-left">&#163;155</p>
+                                                	<p class="text-left pt-15 fs-17-18">Набор ваз в деревенском стиле</p>
+                                                	<p class="text-left fs-17-18">&#163;155</p>
 						</div>
 					</div>
 					<div class="d-grid vertical-top section-row3-supplies-1299 pt-20 grid-row3">
-						<picture class="d-flex h-350">
+						<picture class="d-flex h-350 wp-90-575">
                                                 	<source
                                                         	srcset="assets/img/smooth.png"
                                                                 media="(orientation: portrait)">
@@ -210,12 +274,12 @@
 								src="assets/img/smooth.png" alt="">
                                                 </picture>
 						<div>
-                                                	<p class="text-left pt-15">Гладкая ваза</p>
-                                               		<p class="text-left">&#163;125</p>
+                                                	<p class="text-left pt-15 fs-17-18">Гладкая ваза</p>
+                                               		<p class="text-left fs-17-18">&#163;125</p>
 						</div>
 					</div>
 					<div class="d-grid vertical-top section-row4-supplies-1299 pt-20 grid-row4">
-                                        	<picture class="d-flex h-350">
+                                        	<picture class="d-flex h-350 wp-90-575">
                                                 	<source
                                                        		srcset="assets/img/lucylamp.png"
                                                                 media="(orientation: portrait)">
@@ -223,14 +287,14 @@
 								src="assets/img/lucylamp.png" alt="">
                                                 </picture>
 						<div>
-                                               		<p class="text-left pt-15">"Lucy lamp"</p>
-                                                	<p class="text-left">&#163;399</p>
+                                               		<p class="text-left pt-15 fs-17-18">"Lucy lamp"</p>
+                                                	<p class="text-left fs-17-18">&#163;399</p>
                                         	</div>
 					</div>
 				</section>
 				<section class="d-flex justify-center pt-20">
 					<a class="d-flex justify-center align-center bd-filter6 b-sh h-60 w-200 b-fsh bgcol-blur 
-					   	pointbutton-act a-t-n pointbutton cursor-point" 
+					   	pointbutton-act a-t-n pointbutton cursor-point fs-16"
 					   	href="#Посмотреть-коллекцию">Посмотреть коллекцию
 					</a>
 				</section>
@@ -239,7 +303,7 @@
 				<h2 class="pt-60">Наши популярные продукты</h2>
 				<section class="d-grid justify-between grid-templ-main-new-products-column grid-area">
                                 	<section class="d-grid vertical-top pt-20 first-row">
-                                        	<picture class="d-flex h-350 justify-center">
+                                        	<picture class="d-flex h-350 justify-center wp-90-575">
                                                 	<source
                                                         	srcset="assets/img/Large.png"
                                                                 media="(orientation: portrait)">
@@ -247,12 +311,12 @@
 								src="assets/img/Large.png" alt="">
                                                 </picture>
 						<div>
-                                                	<p class="text-left pt-15">Популярный диван</p>
-                                                	<p class="text-left">&#163;980</p>
+                                                	<p class="text-left pt-15 fs-17-18">Популярный диван</p>
+                                                	<p class="text-left fs-17-18">&#163;980</p>
 						</div>
                                         </section>
                                         <section class="d-grid vertical-top pt-20 second-row1">
-                                        	<picture class="d-flex h-350">
+                                        	<picture class="d-flex h-350 wp-90-575">
                                                 	<source
                                                         	srcset="assets/img/Photo.png"
                                                                 media="(orientation: portrait)">
@@ -260,12 +324,12 @@
 								src="assets/img/Photo.png" alt="">
                                                 </picture>
 						<div>
-                                                	<p class="text-left pt-15">Стильный стул</p>
-                                                	<p class="text-left">&#163;250</p>
+                                                	<p class="text-left pt-15 fs-17-18">Стильный стул</p>
+                                                	<p class="text-left fs-17-18">&#163;250</p>
 						</div>
                                         </section>
 					<section class="d-grid vertical-top pt-20 second-row2">
-                                        	<picture class="d-flex h-350">
+                                        	<picture class="d-flex h-350 wp-90-575">
                                                 	<source
                                                         	srcset="assets/img/chair2.png"
                                                                 media="(orientation: portrait)">
@@ -273,34 +337,34 @@
 								src="assets/img/chair2.png" alt="">
                                                 </picture>
 						<div>
-                                                	<p class="text-left pt-15">Стильный стул</p>
-                                                	<p class="text-left">&#163;250</p>
+                                                	<p class="text-left pt-15 fs-17-18">Стильный стул</p>
+                                                	<p class="text-left fs-17-18">&#163;250</p>
 						</div>
                                         </section>
 				</section>
 
 				<section class="d-flex justify-center">
 					<a class="d-flex justify-center align-center bd-filter6 b-sh h-60 w-200 b-fsh bgcol-blur
-					   	pointbutton-act a-t-n pointbutton cursor-point"
+					   	pointbutton-act a-t-n pointbutton cursor-point fs-16"
 					   href="#Посмотреть-коллекцию">Посмотреть коллекцию
 					</a>
 				</section>
 				<p class="bgcol-wh h-20"></p>
 			</section>
 			<p class="bgcol-gr h-80 m-0"></p>
-			<article class="d-flex justify-center bgcol-gr h-450 m-0">
+			<article class="d-flex justify-center bgcol-gr h-500 m-0">
 				<section class="bgcol-wh w-1000 m-0 h-350">	
 					<h2 class="text-center p-40 fs-30">Присоединяйтесь к клубу и получайте льготы</h2>
-					<h3 class="text-center">
+					<h3 class="text-center fs-17-18">
 						Подпишитесь на нашу рассылку и получайте эксклюзивные<br>
 						предложения о новых ассортиментах, распродажах,<br>
 						всплывающих магазинах и многом другом
 					</h3>
 					<form class="d-flex justify-center text-center m-30a">
 						<div>
-    							<input class="h-60 w-300 bgcol-gr"
+    							<input class="h-60 w-300 bgcol-gr fs-17-18"
 								id="email2" type="text" name="placeinfo" placeholder="Почта@email.com">
-							<input class="h-60 w-150" type="submit" value="Зарегистрироваться">
+							<input class="h-60 w-250 fs-17-18" type="submit" value="Зарегистрироваться">
   						</div>
 					</form>
 				</section>
@@ -319,7 +383,7 @@
                                                 в Челси стал центром внимания лондонского сообщества
 						дизайнеров интерьера.</p>
 					<section class="d-flex text-left pt-100">
-                                                <a class="d-flex justify-center align-center bd-filter6 b-sh h-60
+                                                <a class="d-flex justify-center align-center bd-filter6 b-sh h-60 fs-16
 								w-200 b-fsh bgcol-blur pointbutton-act a-t-n pointbutton cursor-point"
                                            		href="#Быть-в-курсе">Быть в курсе
                                         	</a>
@@ -338,56 +402,56 @@
 			</section>
 		</main>
 		<footer class="bgcol-b col-white text-left pt-20">
-			<nav class="d-grid">
+			<nav class="d-grid d-none">
 				<ul class="d-grid justify-center grid-templ-footer-ref-column">
 					<li class="d-grid vertical-top justify-center">
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#menu">Меню</a>
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#new-arrivals">Новые поступления</a>
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#best-sellers">Бестселлеры</a>
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#recently-viewed">Недавно просмотренные товары</a>
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#popular-this-week">Популярные на этой неделе</a>
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#all-products">Все товары</a>
 					</li>
 					<li class="d-grid justify-center vertical-top pr-80">
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#categories">Категории</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#crockery">Посуда</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#furniture">Мебель</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#homeware">Товары для дома</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#plant-pots">Горшки для растений</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#chairs">Стулья</a>
 					</li>
 					<li class="d-grid justify-center vertical-top pr-40">
-						<a class="a-t-n col-white p-4 pointbutton-act"
+						<a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#Наша-компания">Наша компания</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#О-нас">О нас</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#Вакансии">Вакансии</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#Связаться-с-нами">Связаться с нами</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#Конфиденциальность">Конфиденциальность</a>
-                                                <a class="a-t-n col-white p-4 pointbutton-act"
+                                                <a class="a-t-n col-white p-4 pointbutton-act fs-17-18"
 							href="#Политика-возврата-товаров">Политика возврата товаров</a>
 					</li>
 					<li class="d-grid justify-center vertical-top pl-20">
-						<p class="d-flex pl-40 pr-40">Присоединяйтесь к<br>нашей рассылке</p>
+						<p class="d-flex pl-40 pr-40 fs-17-18">Присоединяйтесь к<br>нашей рассылке</p>
 						<form class="d-flex justify-left h-150 w-250 f-col">
-							<input class="h-60 w-250"
+							<input class="h-60 w-250 fs-17-18"
 								id="email" type="text" name="placeinfo" placeholder="Почта@email.com">
-							<input class="d-flex h-60 w-250" type="submit" value="Зарегистрироваться">
+							<input class="d-flex h-60 w-250 fs-17-18" type="submit" value="Зарегистрироваться">
 						</form>
                                        </li>
 				</ul>
@@ -399,6 +463,10 @@
 				<h3>Авторское право принадлежит 2022 Avion LTD</h3>
 			</section>
 		</footer>
+		<button class="up-arrow-transition up-arrow-opacity up-arrow-visibility up-arrow-tranfrom bg-none align-center justify-center z-999
+			       d-flex cursor-pointer fs-24-22 b-none col-black b-30-20 r-30-20 w-56-52 h-56-52 position-fixed box-shadow-up
+				up-arrow-hover-transform" id="up-arrow-button" aria-label="up">&#8593;</button>
+		<script src="scripts/menu.js"></script>
 	</body>
 </html>
 
